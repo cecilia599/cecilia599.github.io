@@ -170,12 +170,8 @@
 }
 
 .displayMinblock {
-    height: 35vh;
-    width: 35vh;
-    text-align: center;
-    color: white;
-    font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
-    border: 2px solid rgb(176, 176, 176);
+    height: 300px;
+    width: 300px;
     display: inline-block;
     border-radius: 5%;
     /* float: right; */
@@ -185,13 +181,16 @@
 }
 
 .img_display {
-    display: inline-block;
     color: black;
     position: absolute;
 }
 
 .weather_dispay {
     float: right;
+    text-align: center;
+    color: white;
+    font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
+    border: 2px solid rgb(176, 176, 176);
 }
 
 .photo_style {
@@ -210,6 +209,29 @@
     }
 }
 
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .weather_dispay {
+        display: none;
+    }
+    .img_display {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        position: initial;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .galaxy {
         font-size: medium;
@@ -223,6 +245,7 @@
     }
     .about-text {
         font-size: 12px;
+        width: 80%;
     }
     .photo_style {
         width: 300px;
@@ -234,7 +257,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 100%;
         height: auto;
+        position: initial;
     }
 }

@@ -18,6 +18,28 @@ function startAud() {
     document.getElementById("ship").play();
 }
 
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("img_display");
+    //   let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    //   for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+    slides[slideIndex - 1].style.display = "block";
+    //   dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
 // weather block
 let temperature = document.querySelector(".temp");
 let summary = document.querySelector(".summary");
@@ -38,15 +60,9 @@ window.addEventListener("load", () => {
     const lon = 114.1694;
     const lat = 22.3193;
 
-    // API ID
-    // const api = "a4eb5f65cf6ec29987e2bb4c6b93a387";
-
     // API URL
     const base =
         "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en";
-
-    // `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
-    // `lon=${lon}&appid=${api}`;
 
     // Calling the API
     fetch(base)
