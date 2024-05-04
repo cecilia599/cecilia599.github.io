@@ -253,6 +253,9 @@
     .weather_dispay {
         display: none;
     }
+    .center {
+        width: 80%;
+    }
     .img_display {
         display: block;
         margin-left: auto;
