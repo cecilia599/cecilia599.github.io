@@ -170,23 +170,26 @@
 }
 
 .displayMinblock {
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    border-radius: 5%;
-    /* float: right; */
-    /* padding-top: 12px;
-    border-radius: 16px;
-    */
+    margin-top: 10;
+    margin-bottom: 10;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .img_display {
     color: black;
-    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 5%;
+    /* position: absolute; */
 }
 
 .weather_dispay {
-    float: right;
+    height: 300px;
+    width: 300px;
+    border-radius: 5%;
+    display: block;
     text-align: center;
     color: white;
     font-family: Garamond, Verdana, Georgia, Tahoma, sans-serif;
