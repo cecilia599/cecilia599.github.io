@@ -154,7 +154,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1px;
-    width: min(var(--max), calc(100% - 36px));
+    width: min(var(--max), calc(100% - 200px));
     margin: clamp(42px, 8vh, 86px) auto 0;
     background: rgba(255, 255, 255, 0.18);
 }
@@ -490,6 +490,9 @@ h3 {
     .role {
         gap: 12px;
     }
+    .hero-subtitle {
+        width: 80%;
+    }
 }
 
 @media (max-width: 720px) {
@@ -504,6 +507,6 @@ h3 {
     }
 
     .button {
-        width: 100%;
+        width: 80%;
     }
 }
