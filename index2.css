@@ -286,6 +286,16 @@ h3 {
     font-size: 15px;
 }
 
+/* Employer logo inside quick-facts */
+.employer-logo {
+    width: 200px;
+    height: auto;
+    margin-top: 8px;
+    justify-self: start;
+    align-self: center;
+    display: block;
+}
+
 .experience-list {
     display: grid;
     gap: 34px;
